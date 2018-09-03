@@ -13,7 +13,7 @@
       给App发送消息
     </button>
     <button type="button1">
-      分享给联系人
+      分享给联系人1
     </button>
     <button type="button2">
       分享朋友圈
@@ -32,11 +32,13 @@
       window.postMessage('这是html发送到App的消息');
     });
     document.getElementsByTagName('button1')[0].addEventListener('click', function() {
-      window.postMessage('{"method":"KARPFI_APP_SHARE","args":["{"title":"理鱼分享","dtitle":"理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享","url":"https://www.karpfi.com/cn/","mtype":"0"}"]}');
+     // window.postMessage('{"method":"KARPFI_APP_SHARE","args":["{"title":"理鱼分享","dtitle":"理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享","url":"https://www.karpfi.com/cn/","mtype":"0"}"]}');
+     window.postMessage('联系人');
 
     });
     document.getElementsByTagName('button2')[0].addEventListener('click', function() {
-      window.postMessage('{"method":"KARPFI_APP_SHARE","args":["{"title":"理鱼分享","dtitle":"理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享","url":"https://www.karpfi.com/cn/","mtype":"1"}"]}');
+      //window.postMessage('{"method":"KARPFI_APP_SHARE","args":["{"title":"理鱼分享","dtitle":"理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享","url":"https://www.karpfi.com/cn/","mtype":"1"}"]}');
+      window.postMessage('朋友圈');
     });
   </script>
 </html>
