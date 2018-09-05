@@ -10,7 +10,7 @@
     <p>监听从App接收的消息: 0</p>
     <p>(没有消息)</p>
     <button type="button">
-      给App发送消息
+      给App发送消息1
     </button>
     <button type="button" id="button1">
       分享给联系人
@@ -32,11 +32,11 @@
       //window.postMessage('这是html发送到App的消息');
     });
     document.getElementById("button1").addEventListener('click', function() {
-      window.postMessage('{"method":"KARPFI_APP_SHARE","title":"理鱼分享","dtitle":"理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼","url":"https: //www.karpfi.com/cn/","mtype":"0"}');
+      window.postMessage('{"method":"KARPFI_APP_SHARE","title":"送你200美元现金，上理鱼全球月月都有现金领取！","dtitle":"上理鱼，钱有余！理鱼全球，美元理财平台，优质美元资产，让您手中的美元不再站岗！","url":"https: //www.karpfi.com/cn/","mtype":"0"}');
 
     });
     document.getElementById('button2').addEventListener('click', function() {
-      window.postMessage('{"method":"KARPFI_APP_SHARE","title":"理鱼分享","dtitle":"理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼分享理鱼","url":"https: //www.karpfi.com/cn/","mtype":"1"}');
+      window.postMessage('{"method":"KARPFI_APP_SHARE","title":"送你200美元现金，上理鱼全球月月都有现金领取！","dtitle":"上理鱼，钱有余！理鱼全球，美元理财平台，优质美元资产，让您手中的美元不再站岗！","url":"https: //www.karpfi.com/cn/","mtype":"1"}');
     
     });
   </script>
