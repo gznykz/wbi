@@ -1,43 +1,4 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>分享测试</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=320, user-scalable=no">
-  </head>
-  <h1>测试理鱼全球微信分享</h1>
-  <body>
-    <p>监听从App接收的消息: 0</p>
-    <p>(没有消息)</p>
-    <button type="button">
-      给App发送消息1
-    </button>
-    <button type="button" id="button1">
-      分享给联系人
-    </button>
-    <button type="button" id="button2">
-      分享朋友圈
-    </button>
-  </body>
-  <script>
-    var messagesReceivedFromReactNative = 0;
-    document.addEventListener('message', function(e) {
-      messagesReceivedFromReactNative += 1;
-      document.getElementsByTagName('p')[0].innerHTML =
-        '从App接收的消息: ' + messagesReceivedFromReactNative;
-      document.getElementsByTagName('p')[1].innerHTML = e.data;
-    });
-
-    document.getElementsByTagName('button')[0].addEventListener('click', function() {
-      //window.postMessage('这是html发送到App的消息');
-    });
-    document.getElementById("button1").addEventListener('click', function() {
-      window.postMessage('{"method":"KARPFI_APP_SHARE","title":"送你200美元现金，上理鱼全球月月都有现金领取！","dtitle":"上理鱼，钱有余！理鱼全球，美元理财平台，优质美元资产，让您手中的美元不再站岗！","url":"https: //www.karpfi.com/cn/","mtype":"0"}');
-
-    });
-    document.getElementById('button2').addEventListener('click', function() {
-      window.postMessage('{"method":"KARPFI_APP_SHARE","title":"送你200美元现金，上理鱼全球月月都有现金领取！","dtitle":"上理鱼，钱有余！理鱼全球，美元理财平台，优质美元资产，让您手中的美元不再站岗！","url":"https: //www.karpfi.com/cn/","mtype":"1"}');
-    
-    });
-  </script>
+  
 </html>
